@@ -1,0 +1,5 @@
+/Users/indigoorton/Documents/GiffSplitterCSharp/GiffSplitterCSharp/obj/x86/Debug/.NETFramework,Version=v4.0.AssemblyAttribute.cs
+/Users/indigoorton/Documents/GiffSplitterCSharp/GiffSplitterCSharp/bin/Debug/GiffSplitterCSharp.exe.mdb
+/Users/indigoorton/Documents/GiffSplitterCSharp/GiffSplitterCSharp/bin/Debug/GiffSplitterCSharp.exe
+/Users/indigoorton/Documents/GiffSplitterCSharp/GiffSplitterCSharp/obj/x86/Debug/GiffSplitterCSharp.exe
+/Users/indigoorton/Documents/GiffSplitterCSharp/GiffSplitterCSharp/obj/x86/Debug/GiffSplitterCSharp.exe.mdb
