@@ -1,0 +1,6 @@
+C:\Users\Indigo\Documents\GitHub\XperielGifSplitter\GifSplitter\GifSplitter\bin\Debug\GiffSplitter.exe.config
+C:\Users\Indigo\Documents\GitHub\XperielGifSplitter\GifSplitter\GifSplitter\obj\x86\Debug\GifSplitter.csprojResolveAssemblyReference.cache
+C:\Users\Indigo\Documents\GitHub\XperielGifSplitter\GifSplitter\GifSplitter\bin\Debug\GiffSplitter.exe
+C:\Users\Indigo\Documents\GitHub\XperielGifSplitter\GifSplitter\GifSplitter\bin\Debug\GiffSplitter.pdb
+C:\Users\Indigo\Documents\GitHub\XperielGifSplitter\GifSplitter\GifSplitter\obj\x86\Debug\GiffSplitter.exe
+C:\Users\Indigo\Documents\GitHub\XperielGifSplitter\GifSplitter\GifSplitter\obj\x86\Debug\GiffSplitter.pdb

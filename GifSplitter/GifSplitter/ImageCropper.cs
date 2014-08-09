@@ -9,7 +9,7 @@ namespace GifSplitter
 {
 	public static class ImageCropper
 	{
-		public static void makeImageTransparent(ref Bitmap inputBitmap, Color backgroundColor, Color currentFill, Color newFill = null) {			
+		public static void makeImageTransparent(ref Bitmap inputBitmap, Color backgroundColor, Color currentFill, Color newFill, bool useNewFill) {			
 			for (int x = 0; x < inputBitmap.Width; x++) {
 				for (int y = 0; y < inputBitmap.Height; y++) {
 					if (inputBitmap.GetPixel (x, y) != backgroundColor && inputBitmap.GetPixel (x, y) != currentFill) {
@@ -19,7 +19,7 @@ namespace GifSplitter
 			}
 			inputBitmap.MakeTransparent (backgroundColor);
 
-			if (newFill != null) {
+			if (useNewFill) {
 				for (int x = 0; x < inputBitmap.Width; x++) {
 					for (int y = 0; y < inputBitmap.Height; y++) {
 						if (inputBitmap.GetPixel (x, y).A != 0) {

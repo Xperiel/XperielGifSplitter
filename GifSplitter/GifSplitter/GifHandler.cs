@@ -5,15 +5,29 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
-
 using System.Reflection;
 using System.IO;
 using System.Drawing.Imaging;
-
+using System.Windows.Media;
+using System.Windows.Media.Imaging;
+using System.Windows.Interop;
 namespace GifSplitter
 {
-	public static class GifSplitter
+	public static class GifHandler
 	{
+
+        public static GifBitmapEncoder CombineFrames(List<Bitmap> frames)
+        {
+            GifBitmapEncoder gifEncoder = new GifBitmapEncoder();
+            
+            foreach(Bitmap bmpImage in frames) {
+                var src = Imaging.CreateBitmapSourceFromHBitmap(bmpImage.GetHbitmap(), IntPtr.Zero, System.Windows.Int32Rect.Empty, BitmapSizeOptions.FromEmptyOptions());
+
+                gifEncoder.Frames.Add(BitmapFrame.Create(src));
+            }
+            
+            return gifEncoder;
+        }
 
 		public static List<byte[]> EnumerateFrames(string imagePath)
 		{
@@ -71,7 +85,6 @@ namespace GifSplitter
 						img.SelectActiveFrame(dimension, i);
 						using (MemoryStream ms = new MemoryStream())
 						{
-
 							img.Save(ms, imageFormat);
 							tmpFrames.Add(ms.ToArray());
 						}
